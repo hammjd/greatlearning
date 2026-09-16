@@ -1,7 +1,7 @@
 import pandas as pd
 from sklearn.model_selection import train_test_split
 
-RAW_PATH = "tourism_project/data/tourism.csv"
+RAW_PATH = "project/data/tourism.csv"
 df = pd.read_csv(RAW_PATH)
 
 # Remove the customer identifier—it is not a predictive feature.
