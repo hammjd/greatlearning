@@ -4,8 +4,8 @@ from sklearn.model_selection import train_test_split
 RAW_PATH = "project/data/tourism.csv"
 df = pd.read_csv(RAW_PATH)
 
-# Remove the customer identifier—it is not a predictive feature.
-df.drop(columns=["CustomerID"], inplace=True)
+# Remove the customer identifier and saved CSV index.
+df.drop(columns=["CustomerID", "Unnamed: 0"], errors="ignore", inplace=True)
 
 # Keep categorical values as strings.
 # The training pipeline will one-hot-encode them.
