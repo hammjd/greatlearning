@@ -1,7 +1,7 @@
 # Store the dataset registration code in the project's models folder.
 import pandas as pd
 
-RAW_PATH = "/content/drive/MyDrive/Colab Notebooks/Tourism/tourism.csv"
+RAW_PATH = "project/data/tourism.csv"
 
 # Load the raw dataset
 df = pd.read_csv(RAW_PATH)
